@@ -47,11 +47,10 @@ const showMeals = (meals) => {
             mealDetails.style.display = "block";
             mealDetails.innerHTML = 
             `
-                <div class="text-white bg-dark w-50 h-50 rounded shadow-lg mb-4 d-flex flex-column flex-sm-row">
+                <div class="text-white bg-dark w-75 h-50 rounded shadow-lg mb-4 d-flex flex-row">
                     <img class="w-50 rounded" src=${meal.strMealThumb} alt=${meal.strMeal} class="card-img-top">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">${meal.strMeal}</h5>
                         <ul>
                             <li>${meal.strIngredient1}</li>
                             <li>${meal.strIngredient2}</li>
